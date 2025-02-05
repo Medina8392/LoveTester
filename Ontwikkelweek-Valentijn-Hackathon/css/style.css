@@ -1,0 +1,150 @@
+/* Algemene stijlen */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* texts */
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0; /* Verwijder standaard marges */
+  padding-top: 20px; /* Extra ruimte boven de tekst */
+  text-align: center;
+}
+
+/* Header */
+.header {
+  background: #ff4d6d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  height: 10vh;
+}
+
+/* Layout container */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  height: 70vh;
+  padding: 50px;
+  background: white;
+  margin: 20px auto;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Dit zorgt ervoor dat .buttons correct gepositioneerd wordt */
+}
+
+
+form {
+  display: flex;
+  align-items: center; /* Centreert de inputvelden */
+  gap: 40px; /* Ruimte tussen inputvelden */
+  margin-top: auto; /* Duwt het formulier naar beneden */
+  padding-bottom: 20px; /* Extra ruimte onderaan */
+}
+
+input {
+  width: 200px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px; /* Grotere tekst in de inputvelden */
+  width: 230px; /* Groter inputveld voor betere zichtbaarheid */
+  height: 70px;
+}
+
+
+/* Algemene knopstijl */
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Reset-knop */
+.btn-reset {
+  background-color: #ff4d6d;
+  color: white;
+}
+
+.btn-reset:hover {
+  background-color: #d93b5a;
+}
+
+/* Start-knop */
+.btn-start {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-start:hover {
+  background-color: #3a8f40;
+}
+
+/* Uitlijning voor knoppen onderaan en rechts */
+.buttons {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+label {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+
+/* Zijpanelen */
+.aside {
+  position: fixed;
+  top: 0;
+  width: 20%;
+  height: 100vh;
+  background: #ffb3c1;
+  padding: 20px;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer */
+.Footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+}
+
+/* Responsiviteit */
+@media screen and (max-width: 768px) {
+  .side-left, .side-right {
+    display: none;
+  }
+
+  .content {
+    width: 90%;
+  }
+}
