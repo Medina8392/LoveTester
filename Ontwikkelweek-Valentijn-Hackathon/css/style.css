@@ -112,8 +112,43 @@ label {
   font-weight: bold;
 }
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.heart-container {
 
 
+}
+
+.progressive-heart {
+  width: 250px;
+  height: 200px;
+  background: #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.progressive-fill {
+  height: 100%;
+  width: 80%;
+  background: #d93b5a;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #eee;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 5px 3px;
+}
+
+.html {
+  width: 80%;
+}
 /* Zijpanelen */
 .aside {
   position: fixed;
